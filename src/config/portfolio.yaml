@@ -1,0 +1,117 @@
+profile:
+  name: "Yash Shinde"
+  role: "AI & Full Stack Engineer"
+  tagline: "I design and ship production-grade AI systems."
+  proof:
+    - "10+ AI projects shipped"
+    - "Multi-agent architectures"
+    - "Hackathon finalist"
+  email: "yash@example.com"
+  github: "https://github.com/yashshinde0080"
+  linkedin: "https://linkedin.com/in/yashshinde"
+
+skills:
+  Programming:
+    - name: "Python"
+      used_in: ["ComplianceCheckpoint", "TrafficX"]
+    - name: "JavaScript"
+      used_in: ["Portfolio", "ClassX"]
+    - name: "TypeScript"
+      used_in: ["ComplianceCheckpoint"]
+  
+  AI & ML:
+    - name: "LLMs"
+      used_in: ["ComplianceCheckpoint"]
+    - name: "RAG"
+      used_in: ["ComplianceCheckpoint"]
+    - name: "CNNs"
+      used_in: ["TrafficX"]
+    - name: "Computer Vision"
+      used_in: ["TrafficX"]
+  
+  Backend:
+    - name: "Flask"
+      used_in: ["ComplianceCheckpoint", "TrafficX"]
+    - name: "Node.js"
+      used_in: ["Portfolio"]
+    - name: "Supabase"
+      used_in: ["ComplianceCheckpoint"]
+  
+  Frontend:
+    - name: "React"
+      used_in: ["Portfolio", "ComplianceCheckpoint"]
+    - name: "Tailwind CSS"
+      used_in: ["Portfolio"]
+    - name: "Vite"
+      used_in: ["Portfolio"]
+
+projects:
+  - id: "compliance-checkpoint"
+    title: "ComplianceCheckpoint"
+    problem: "Manual SOC 2 compliance is slow, error-prone, and expensive for SMBs."
+    solution: "AI-powered platform that auto-generates controls, maps evidence, and produces audit-ready reports."
+    impact:
+      - "Reduced compliance prep time by 60%"
+      - "Targeted SMBs with <50 employees"
+      - "Eliminated manual evidence gathering"
+    tech:
+      backend: ["Python", "Flask"]
+      ai: ["LLMs", "RAG", "LangChain"]
+      data: ["Supabase", "PostgreSQL"]
+      frontend: ["React", "TypeScript"]
+    image: "/images/projects/compliance/ui.png"
+    repo: "https://github.com/yashshinde0080/compliance-checkpoint"
+    live: null
+    featured: true
+
+  - id: "trafficx"
+    title: "TrafficX"
+    problem: "Traffic congestion detection relies on expensive sensors and manual monitoring."
+    solution: "Computer vision system using CNNs to detect congestion from standard CCTV feeds in real-time."
+    impact:
+      - "95% detection accuracy"
+      - "Real-time processing at 30 FPS"
+      - "Works with existing infrastructure"
+    tech:
+      backend: ["Python", "Flask"]
+      ai: ["CNNs", "OpenCV", "TensorFlow"]
+      data: ["NumPy", "Pandas"]
+    image: "/images/projects/trafficx/demo.png"
+    repo: "https://github.com/yashshinde0080/trafficx"
+    live: null
+    featured: true
+
+  - id: "classx"
+    title: "ClassX"
+    problem: "Online classes lack engagement tracking and attention monitoring."
+    solution: "Browser extension that uses facial recognition to track student attention during live sessions."
+    impact:
+      - "Increased engagement visibility by 40%"
+      - "Non-intrusive monitoring"
+      - "Works with any video platform"
+    tech:
+      backend: ["Node.js"]
+      ai: ["Face-API.js", "TensorFlow.js"]
+      frontend: ["JavaScript", "Chrome Extensions"]
+    image: "/images/projects/classx/ui.png"
+    repo: "https://github.com/yashshinde0080/classx"
+    live: null
+    featured: false
+
+experience:
+  - role: "AI/ML Intern"
+    company: "Tech Company"
+    period: "2024"
+    highlights:
+      - "Built production ML pipelines"
+      - "Improved model accuracy by 15%"
+
+achievements:
+  - "Built 10+ production-grade AI systems"
+  - "Hackathon finalist - AI Track"
+  - "Open source contributor"
+
+seo:
+  title: "Yash Shinde – AI Engineer"
+  description: "Production-grade AI systems, multi-agent architectures, and real-world impact."
+  image: "/images/og-image.png"

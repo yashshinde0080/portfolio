@@ -53,7 +53,20 @@ export default {
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
   			}
-  		}
+  		},
+        spacing: {
+            'gold-xs': '0.618rem',
+            'gold-sm': '1rem',
+            'gold-md': '1.618rem',
+            'gold-lg': '2.618rem',
+            'gold-xl': '4.236rem',
+            'gold-2xl': '6.854rem',
+            'gold-3xl': '11.089rem',
+        },
+        fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Inter', 'sans-serif'],
+        }
   	}
   },
   plugins: [require("tailwindcss-animate")],

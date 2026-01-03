@@ -1,70 +1,59 @@
-import { useState } from "react"
+import { useEffect, useRef } from "react"
 import { Badge } from "@/components/ui/badge"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { animateSectionEntry, animateCardHover } from "@/lib/motion"
 
-export default function Skills({ skills, projects }) {
-  const [activeSkill, setActiveSkill] = useState(null)
+export default function Skills({ skills, setHoveredSkill }) {
+  const sectionRef = useRef(null)
+
+  useEffect(() => {
+    if (sectionRef.current) {
+        animateSectionEntry(sectionRef.current)
+    }
+  }, [])
 
   if (!skills) return null
 
-  const getProjectsUsingSkill = (skillName) => {
-    if (!projects) return []
-    return projects.filter(project => {
-      const allTech = Object.values(project.tech).flat()
-      return allTech.includes(skillName)
-    })
-  }
-
-  const skillCategories = Object.entries(skills)
-
   return (
-    <section id="skills" className="section bg-muted/30">
-      <div className="container-custom">
-        <h2 className="text-3xl font-bold mb-10">Skills & Technologies</h2>
+    <section id="skills" className="py-gold-xl relative bg-muted/20" ref={sectionRef}>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1140px]">
+        {/* Section Header */}
+        <div className="mb-gold-md space-y-4">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Technical Expertise</h2>
+          <p className="text-muted-foreground text-lg max-w-2xl">
+            core competencies and the technologies used to deliver production systems.
+          </p>
+        </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {skillCategories.map(([category, categorySkills]) => (
-            <Card key={category} className="bg-card">
-              <CardHeader className="pb-3">
-                <CardTitle className="text-lg">{category}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="flex flex-wrap gap-2">
-                  {categorySkills.map((skill) => {
-                    const skillName = typeof skill === 'string' ? skill : skill.name
-                    const usedIn = typeof skill === 'object' ? skill.used_in : []
-                    const projectCount = usedIn.length || getProjectsUsingSkill(skillName).length
-                    
-                    return (
-                      <Badge
-                        key={skillName}
-                        variant={activeSkill === skillName ? "default" : "secondary"}
-                        className="cursor-pointer transition-all hover:scale-105"
-                        onMouseEnter={() => setActiveSkill(skillName)}
-                        onMouseLeave={() => setActiveSkill(null)}
-                      >
-                        {skillName}
-                        {projectCount > 0 && (
-                          <span className="ml-1 opacity-60">({projectCount})</span>
-                        )}
-                      </Badge>
-                    )
-                  })}
-                </div>
-              </CardContent>
-            </Card>
+        <div className="grid gap-gold-md md:grid-cols-2 lg:grid-cols-3">
+          {skills.map((category, index) => (
+            <div 
+              key={index} 
+              onMouseEnter={(e) => animateCardHover(e.currentTarget, true)}
+              onMouseLeave={(e) => animateCardHover(e.currentTarget, false)}
+              className="group p-6 rounded-xl bg-card border border-border/50 hover:border-primary/50 transition-colors duration-300"
+            >
+              <h3 className="text-lg font-semibold mb-6 flex items-center gap-2 text-primary">
+                 {/* Decorative dot */}
+                <span className="w-1.5 h-1.5 rounded-full bg-primary/50" />
+                {category.domain}
+              </h3>
+              
+              <div className="flex flex-wrap gap-2">
+                {category.items.map((skill, skillIndex) => (
+                  <Badge
+                    key={skillIndex}
+                    variant="secondary"
+                    className="cursor-pointer hover:bg-primary hover:text-primary-foreground transition-all duration-300 py-1.5 px-3"
+                    onMouseEnter={() => setHoveredSkill(skill.name)}
+                    onMouseLeave={() => setHoveredSkill(null)}
+                  >
+                    {skill.name}
+                  </Badge>
+                ))}
+              </div>
+            </div>
           ))}
         </div>
-
-        {/* Active Skill Projects */}
-        {activeSkill && (
-          <div className="mt-8 p-4 bg-card rounded-lg border">
-            <p className="text-sm text-muted-foreground">
-              <strong>{activeSkill}</strong> used in:{" "}
-              {getProjectsUsingSkill(activeSkill).map(p => p.title).join(", ") || "Multiple projects"}
-            </p>
-          </div>
-        )}
       </div>
     </section>
   )

@@ -1,26 +1,13 @@
-import yaml from "js-yaml"
+import portfolio from '@/config/portfolio.yaml'
+import theme from '@/config/theme.yaml'
+import seo from '@/config/seo.yaml'
 
 export async function loadConfig() {
-  try {
-    const response = await fetch("/src/config/portfolio.yaml")
-    if (!response.ok) {
-      throw new Error(`Failed to load config: ${response.status}`)
-    }
-    const text = await response.text()
-    return yaml.load(text)
-  } catch (error) {
-    console.error("Error loading portfolio config:", error)
-    return null
+  // Simulate async load if needed, but imports are sync in bundle usually
+  // Returning promise to match App.jsx expectation
+  return {
+    ...portfolio,
+    theme,
+    seo
   }
-}
-
-export function getProjectsBySkill(projects, skillName) {
-  return projects.filter(project => {
-    const allTech = Object.values(project.tech).flat()
-    return allTech.includes(skillName)
-  })
-}
-
-export function getFeaturedProjects(projects) {
-  return projects.filter(project => project.featured)
 }

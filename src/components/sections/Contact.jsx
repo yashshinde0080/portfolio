@@ -1,8 +1,10 @@
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, memo } from "react"
 import { Button } from "@/components/ui/button"
 import { animateSectionEntry, animateButtonPress } from "@/lib/motion"
 
-export default function Contact({ contact }) {
+// Optimization: Use React.memo to prevent re-renders when parent state (like hoveredSkill) changes.
+// Props (contact) are stable.
+const Contact = memo(function Contact({ contact }) {
   const sectionRef = useRef(null)
 
   useEffect(() => {
@@ -62,4 +64,6 @@ export default function Contact({ contact }) {
       </div>
     </section>
   )
-}
+})
+
+export default Contact

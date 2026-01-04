@@ -1,9 +1,11 @@
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, memo } from "react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { animateSectionEntry, animateHero3D } from "@/lib/motion"
 
-export default function Hero({ profile }) {
+// Optimization: Use React.memo to prevent re-renders when parent state (like hoveredSkill) changes.
+// Props (profile) are stable, so this component doesn't need to update.
+const Hero = memo(function Hero({ profile }) {
   const textRef = useRef(null)
   const visualContainerRef = useRef(null)
   const visualObjectRef = useRef(null)
@@ -99,4 +101,6 @@ export default function Hero({ profile }) {
       </div>
     </section>
   )
-}
+})
+
+export default Hero

@@ -1,8 +1,10 @@
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, memo } from "react"
 import { Badge } from "@/components/ui/badge"
 import { animateSectionEntry, animateCardHover } from "@/lib/motion"
 
-export default function Skills({ skills, setHoveredSkill }) {
+// Optimization: Use React.memo to prevent re-renders when parent state changes.
+// setHoveredSkill is stable, and skills is stable config data.
+const Skills = memo(function Skills({ skills, setHoveredSkill }) {
   const sectionRef = useRef(null)
 
   useEffect(() => {
@@ -57,4 +59,6 @@ export default function Skills({ skills, setHoveredSkill }) {
       </div>
     </section>
   )
-}
+})
+
+export default Skills

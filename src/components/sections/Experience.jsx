@@ -1,7 +1,9 @@
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, memo } from "react"
 import { animateSectionEntry } from "@/lib/motion"
 
-export default function Experience({ experience }) {
+// Optimization: Use React.memo to prevent re-renders when parent state (like hoveredSkill) changes.
+// Props (experience) are stable.
+const Experience = memo(function Experience({ experience }) {
   const sectionRef = useRef(null)
 
   useEffect(() => {
@@ -46,4 +48,6 @@ export default function Experience({ experience }) {
       </div>
     </section>
   )
-}
+})
+
+export default Experience

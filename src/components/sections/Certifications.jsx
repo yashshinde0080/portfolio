@@ -1,8 +1,10 @@
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, memo } from "react"
 import { Badge } from "@/components/ui/badge"
 import { animateSectionEntry } from "@/lib/motion"
 
-export default function Certifications({ certifications }) {
+// Optimization: Use React.memo to prevent re-renders when parent state (like hoveredSkill) changes.
+// Props (certifications) are stable.
+const Certifications = memo(function Certifications({ certifications }) {
   const sectionRef = useRef(null)
 
   useEffect(() => {
@@ -37,4 +39,6 @@ export default function Certifications({ certifications }) {
       </div>
     </section>
   )
-}
+})
+
+export default Certifications

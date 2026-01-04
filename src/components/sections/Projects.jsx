@@ -1,10 +1,12 @@
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, memo } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { cn } from "@/lib/utils"
 import { animateRelationship, animateCardHover, animateSectionEntry } from "@/lib/motion"
 
-export default function Projects({ projects, hoveredSkill }) {
+// Optimization: Use React.memo. Note: This component WILL re-render when hoveredSkill changes,
+// which is intended behavior to update highlighting.
+const Projects = memo(function Projects({ projects, hoveredSkill }) {
   const itemsRef = useRef([])
   const sectionRef = useRef(null)
 
@@ -107,4 +109,6 @@ export default function Projects({ projects, hoveredSkill }) {
       </div>
     </section>
   )
-}
+})
+
+export default Projects

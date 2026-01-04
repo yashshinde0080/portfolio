@@ -1,9 +1,11 @@
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, memo } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { animateSectionEntry } from "@/lib/motion"
 
-export default function Achievements({ achievements }) {
+// Optimization: Use React.memo to prevent re-renders when parent state (like hoveredSkill) changes.
+// Props (achievements) are stable.
+const Achievements = memo(function Achievements({ achievements }) {
   const sectionRef = useRef(null)
 
   useEffect(() => {
@@ -40,4 +42,6 @@ export default function Achievements({ achievements }) {
       </div>
     </section>
   )
-}
+})
+
+export default Achievements

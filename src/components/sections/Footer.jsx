@@ -1,3 +1,5 @@
+import { ExternalLink } from "lucide-react"
+
 export default function Footer({ profile, contact }) {
   const currentYear = new Date().getFullYear()
 
@@ -14,9 +16,11 @@ export default function Footer({ profile, contact }) {
                 href={contact.github} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                className="group flex items-center gap-1 text-sm text-muted-foreground hover:text-primary transition-colors"
+                aria-label="GitHub (opens in a new tab)"
               >
                 GitHub
+                <ExternalLink className="size-3 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true" />
               </a>
             )}
             {contact?.linkedin && (
@@ -24,9 +28,11 @@ export default function Footer({ profile, contact }) {
                 href={contact.linkedin} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                className="group flex items-center gap-1 text-sm text-muted-foreground hover:text-primary transition-colors"
+                aria-label="LinkedIn (opens in a new tab)"
               >
                 LinkedIn
+                <ExternalLink className="size-3 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true" />
               </a>
             )}
           </div>

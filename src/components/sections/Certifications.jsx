@@ -1,8 +1,8 @@
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, memo } from "react"
 import { Badge } from "@/components/ui/badge"
 import { animateSectionEntry } from "@/lib/motion"
 
-export default function Certifications({ certifications }) {
+function Certifications({ certifications }) {
   const sectionRef = useRef(null)
 
   useEffect(() => {
@@ -38,3 +38,6 @@ export default function Certifications({ certifications }) {
     </section>
   )
 }
+
+// Optimized: Use React.memo to prevent unnecessary re-renders when parent state (e.g., hoveredSkill) changes.
+export default memo(Certifications)

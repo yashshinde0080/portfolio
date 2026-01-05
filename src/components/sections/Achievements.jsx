@@ -1,9 +1,9 @@
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, memo } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { animateSectionEntry } from "@/lib/motion"
 
-export default function Achievements({ achievements }) {
+function Achievements({ achievements }) {
   const sectionRef = useRef(null)
 
   useEffect(() => {
@@ -41,3 +41,6 @@ export default function Achievements({ achievements }) {
     </section>
   )
 }
+
+// Optimized: Use React.memo to prevent unnecessary re-renders when parent state (e.g., hoveredSkill) changes.
+export default memo(Achievements)

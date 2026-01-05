@@ -1,4 +1,6 @@
-export default function Footer({ profile, contact }) {
+import { memo } from "react"
+
+function Footer({ profile, contact }) {
   const currentYear = new Date().getFullYear()
 
   return (
@@ -35,3 +37,6 @@ export default function Footer({ profile, contact }) {
     </footer>
   )
 }
+
+// Optimized: Use React.memo to prevent unnecessary re-renders when parent state (e.g., hoveredSkill) changes.
+export default memo(Footer)

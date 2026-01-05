@@ -11,7 +11,7 @@ const links = [
   { href: "/projects", label: "Projects" },
   { href: "/education", label: "Education" },
   { href: "/hackathons", label: "Hackathons" },
-  { href: "/blog", label: "Blog" },
+  { href: "/blog", label: "Research Paper" },
   { href: "/contact", label: "Contact" },
 ]
 
@@ -23,7 +23,7 @@ export function Navigation() {
       <div className="max-w-5xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="text-foreground font-medium hover:text-muted-foreground transition-colors">
-            Your Name
+            Yash Shinde
           </Link>
           <div className="flex items-center gap-6">
             {links.map((link) => (

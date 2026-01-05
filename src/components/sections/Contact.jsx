@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react"
+import { ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { animateSectionEntry, animateButtonPress } from "@/lib/motion"
 
@@ -40,8 +41,13 @@ export default function Contact({ contact }) {
                     asChild
                     onMouseDown={(e) => animateButtonPress(e.currentTarget)}
                 >
-                <a href={contact.linkedin} target="_blank" rel="noopener noreferrer">
-                    LinkedIn
+                <a
+                    href={contact.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn (opens in a new tab)"
+                >
+                    LinkedIn <ExternalLink className="ml-2 h-4 w-4" aria-hidden="true" />
                 </a>
                 </Button>
             )}
@@ -53,8 +59,13 @@ export default function Contact({ contact }) {
                     asChild
                     onMouseDown={(e) => animateButtonPress(e.currentTarget)}
                 >
-                <a href={contact.github} target="_blank" rel="noopener noreferrer">
-                    GitHub
+                <a
+                    href={contact.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub (opens in a new tab)"
+                >
+                    GitHub <ExternalLink className="ml-2 h-4 w-4" aria-hidden="true" />
                 </a>
                 </Button>
             )}

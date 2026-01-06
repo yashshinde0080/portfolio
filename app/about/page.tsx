@@ -23,7 +23,7 @@ export default function AboutPage() {
         {/* Profile Section */}
         <div className="mb-16 animate-in fade-in slide-in-from-left-8 duration-700 delay-200">
           <div className="relative w-48 h-48 rounded-2xl overflow-hidden border border-border mb-8 hover:scale-105 hover:shadow-xl transition-all duration-500">
-            <Image src="/professional-headshot.jpg" alt="Profile photo" fill className="object-cover" />
+            <Image src="/professional-headshot.jpeg" alt="Profile photo" fill className="object-cover" />
           </div>
 
           <div className="prose prose-neutral dark:prose-invert max-w-none space-y-6">

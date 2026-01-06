@@ -89,7 +89,7 @@ export default function Home() {
           </div>
           <div className="relative animate-in fade-in zoom-in-50 duration-1000 delay-300">
             <div className="aspect-square relative rounded-2xl overflow-hidden border border-border shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-500">
-              <Image src="/professional-developer-portrait.jpg" alt="Profile" fill className="object-cover" priority />
+              <Image src="/professional-developer-portrait.jpeg" alt="Profile" fill className="object-cover" priority />
             </div>
           </div>
         </div>

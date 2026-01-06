@@ -15,17 +15,17 @@ const experiences = [
     company: "JCER",
     location: "Belagavi,Karnataka,India",
     period: "2022 — Present",
-    logo: "/tech-company-logo.jpg",
-    description: "Leading frontend architecture and design system development",
+    logo: "/tech-company-logo.png",
+    description: "JCER is approved by AICTE and UGC, affiliated to Visvesvaraya Technological University (VTU), Belagavi",
     responsibilities: [
-      "Architected and implemented a company-wide design system used by 50+ engineers",
-      "Reduced bundle size by 40% through code splitting and lazy loading strategies",
-      "Led migration from Create React App to Next.js, improving performance by 60%",
-      "Mentored 5 junior engineers on best practices and code quality",
-      "Collaborated with design team to establish component API standards",
+      // "Architected and implemented a company-wide design system used by 50+ engineers",
+      // "Reduced bundle size by 40% through code splitting and lazy loading strategies",
+      // "Led migration from Create React App to Next.js, improving performance by 60%",
+      // "Mentored 5 junior engineers on best practices and code quality",
+      // "Collaborated with design team to establish component API standards",
     ],
-    tech: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
-    image: "/modern-web-dashboard.png",
+    tech: ["Student"],
+    image: "/modern-web-dashboard.webp",
   },
   // {
     // role: "Frontend Developer",
@@ -157,7 +157,7 @@ export default function ExperiencePage() {
             asChild
             className="hover:scale-105 transition-transform duration-300 bg-transparent"
           >
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/yash-shinde-3a1ab5274/" target="_blank" rel="noopener noreferrer">
               LinkedIn Profile <ExternalLink className="ml-2 h-4 w-4" />
             </a>
           </Button>

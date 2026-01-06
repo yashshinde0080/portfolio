@@ -18,69 +18,69 @@ const posts = [
     slug: "accessible-design-systems",
     topics: ["Accessibility", "Design Systems", "React"],
   },
-  {
-    title: "The Real Cost of useEffect",
-    date: "November 2024",
-    readTime: "6 min read",
-    excerpt:
-      "Why I stopped fetching data in useEffect and what I do instead. Exploring better patterns for data synchronization in React applications.",
-    slug: "cost-of-useeffect",
-    topics: ["React", "Performance", "Patterns"],
-  },
-  {
-    title: "Optimizing Next.js Bundle Size",
-    date: "October 2024",
-    readTime: "10 min read",
-    excerpt:
-      "Practical strategies that reduced our production bundle by 40%. Code splitting, dynamic imports, and analyzing what really matters.",
-    slug: "nextjs-bundle-optimization",
-    topics: ["Next.js", "Performance", "Web Vitals"],
-  },
-  {
-    title: "Type-Safe API Calls with tRPC",
-    date: "September 2024",
-    readTime: "7 min read",
-    excerpt:
-      "How we eliminated API runtime errors by adopting end-to-end type safety. A deep dive into tRPC benefits and migration strategy.",
-    slug: "type-safe-apis-trpc",
-    topics: ["TypeScript", "API Design", "tRPC"],
-  },
-  {
-    title: "When to Use Server Components",
-    date: "August 2024",
-    readTime: "9 min read",
-    excerpt:
-      "Practical decision framework for choosing between Server and Client Components in Next.js 13+. Real-world examples and performance implications.",
-    slug: "when-server-components",
-    topics: ["React", "Next.js", "Server Components"],
-  },
-  {
-    title: "Debugging Production React Apps",
-    date: "July 2024",
-    readTime: "12 min read",
-    excerpt:
-      "Tools and techniques for tracking down elusive production bugs. Error boundaries, logging strategies, and reproduction techniques.",
-    slug: "debugging-production-react",
-    topics: ["React", "Debugging", "DevOps"],
-  },
-  {
-    title: "CSS-in-JS vs Tailwind: 2024 Perspective",
-    date: "June 2024",
-    readTime: "11 min read",
-    excerpt:
-      "After using both approaches in production, here are my findings. Performance benchmarks, developer experience, and when to choose each.",
-    slug: "css-in-js-vs-tailwind",
-    topics: ["CSS", "Tailwind", "Performance"],
-  },
-  {
-    title: "Writing Better Git Commits",
-    date: "May 2024",
-    readTime: "5 min read",
-    excerpt:
-      "Small changes to commit messages that made code reviews 50% faster. Conventions that actually help your team.",
-    slug: "better-git-commits",
-    topics: ["Git", "Best Practices", "Team"],
-  },
+  // {
+    // title: "The Real Cost of useEffect",
+    // date: "November 2024",
+    // readTime: "6 min read",
+    // excerpt:
+      // "Why I stopped fetching data in useEffect and what I do instead. Exploring better patterns for data synchronization in React applications.",
+    // slug: "cost-of-useeffect",
+    // topics: ["React", "Performance", "Patterns"],
+  // },
+  // {
+    // title: "Optimizing Next.js Bundle Size",
+    // date: "October 2024",
+    // readTime: "10 min read",
+    // excerpt:
+      // "Practical strategies that reduced our production bundle by 40%. Code splitting, dynamic imports, and analyzing what really matters.",
+    // slug: "nextjs-bundle-optimization",
+    // topics: ["Next.js", "Performance", "Web Vitals"],
+  // },
+  // {
+    // title: "Type-Safe API Calls with tRPC",
+    // date: "September 2024",
+    // readTime: "7 min read",
+    // excerpt:
+      // "How we eliminated API runtime errors by adopting end-to-end type safety. A deep dive into tRPC benefits and migration strategy.",
+    // slug: "type-safe-apis-trpc",
+    // topics: ["TypeScript", "API Design", "tRPC"],
+  // },
+  // {
+    // title: "When to Use Server Components",
+    // date: "August 2024",
+    // readTime: "9 min read",
+    // excerpt:
+      // "Practical decision framework for choosing between Server and Client Components in Next.js 13+. Real-world examples and performance implications.",
+    // slug: "when-server-components",
+    // topics: ["React", "Next.js", "Server Components"],
+  // },
+  // {
+    // title: "Debugging Production React Apps",
+    // date: "July 2024",
+    // readTime: "12 min read",
+    // excerpt:
+      // "Tools and techniques for tracking down elusive production bugs. Error boundaries, logging strategies, and reproduction techniques.",
+    // slug: "debugging-production-react",
+    // topics: ["React", "Debugging", "DevOps"],
+  // },
+  // {
+    // title: "CSS-in-JS vs Tailwind: 2024 Perspective",
+    // date: "June 2024",
+    // readTime: "11 min read",
+    // excerpt:
+      // "After using both approaches in production, here are my findings. Performance benchmarks, developer experience, and when to choose each.",
+    // slug: "css-in-js-vs-tailwind",
+    // topics: ["CSS", "Tailwind", "Performance"],
+  // },
+  // {
+    // title: "Writing Better Git Commits",
+    // date: "May 2024",
+    // readTime: "5 min read",
+    // excerpt:
+      // "Small changes to commit messages that made code reviews 50% faster. Conventions that actually help your team.",
+    // slug: "better-git-commits",
+    // topics: ["Git", "Best Practices", "Team"],
+  // },
 ]
 
 export default function BlogPage() {
@@ -90,7 +90,7 @@ export default function BlogPage() {
 
       <main className="max-w-4xl mx-auto px-6 py-16 animate-in fade-in slide-in-from-bottom-4 duration-1000">
         <div className="mb-12">
-          <h1 className="text-4xl font-semibold text-foreground mb-4">Blog</h1>
+          <h1 className="text-4xl font-semibold text-foreground mb-4">Research papers</h1>
           <p className="text-muted-foreground">Technical insights and lessons learned</p>
         </div>
 

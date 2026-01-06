@@ -11,20 +11,20 @@ export const metadata = {
 
 const projects = [
   {
-    title: "Design System Framework",
+    title: "Smart Attendance System",
     category: "Open Source",
-    year: "2024",
-    context: "Needed a scalable, accessible component library for modern React applications",
-    constraints: "Had to support TypeScript, multiple styling solutions, and maintain backward compatibility",
+    year: "2025",
+    context: "Manual attendance is time-consuming, error-prone, and allows proxy entries. An automated system using QR codes, barcodes, and manual fallback improves accuracy and saves class time.",
+    constraints: "Limited hardware, low budget, internet dependency for QR scans, basic security (no biometrics), and restricted scope without full LMS features.",
     decisions:
-      "Built with Radix UI primitives for accessibility, used CSS-in-JS for flexibility, created comprehensive documentation",
-    outcome: "5,000+ GitHub stars, adopted by 50+ companies, 95% positive feedback",
-    reflection: "Would add more real-world examples earlier and invest more in testing infrastructure",
-    image: "/component-library-documentation-interface.jpg",
-    tech: ["React", "TypeScript", "Radix UI", "Tailwind"],
+      "Used QR/barcode for low-cost automation, Python + Streamlit for fast development, MongoDB for flexible storage, and added basic analytics instead of just data storage.",
+    outcome: "Free to use and alter it",
+    reflection: "The system works well for automation and insights but cannot fully prevent proxy attendance. It is a practical academic prototype, not a production-grade solution.",
+    image: "/component-library-documentation-interface.png",
+    tech: ["Python", "Streamlit", "QR & Barcode", "MongoDB"],
     links: {
-      live: "https://example.com",
-      github: "https://github.com",
+      live: "https://jcer-attendify.streamlit.app/",
+      github: "https://github.com/yashshinde0080/mini_project",
     },
   },
   {

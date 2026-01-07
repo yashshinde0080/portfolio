@@ -52,11 +52,11 @@ const projects = [
     decisions: "Used transfer learning with a pre-trained CNN (e.g. ResNet/DenseNet) to reduce data requirements. Applied data augmentation, weighted loss for imbalance, and fine-tuned upper layers only to preserve learned visual features. Evaluated using recall, precision, and AUC instead of accuracy alone.",
     outcome: "None",
     reflection: "The model performs well for assisted screening but is not clinically deployable without validation across hospitals and devices. Real-world use would require regulatory approval, explainability, and continuous retraining on diverse datasets.",
-    image: "/collaborative-document-editor-interface.jpg",
-    tech: ["React", "WebRTC", "CRDTs", "Node.js"],
+    image: "/collaborative-document-editor-interface.webp",
+    tech: ["Python", "Hugging Face", "PyTorch", "Medical Imaging"],
     links: {
-      live: "https://example.com",
-      github: null,
+      live: null,
+      github: "https://github.com/yashshinde0080/research",
     },
   },
   {

@@ -11,24 +11,22 @@ export const metadata = {
 
 const education = [
   {
-    degree: "Bachelor of Science in Computer Science",
-    institution: "University of Technology",
-    location: "San Francisco, CA",
-    period: "2014 — 2018",
-    logo: "/university-logo-shield.jpg",
-    gpa: "3.8 / 4.0",
+    degree: "Bachelor of Science in Computer Science(AIML)",
+    institution: "Jain College of Engineering and Research, Belagavi",
+    location: "Ubambag, Belagavi, Karnataka, India",
+    period: "2014 — present",
+    logo: "/tech-company-logo.png",
+    // gpa: "3.8/4.0",
     achievements: [
-      "Dean's List all semesters",
-      'Senior Thesis: "Optimizing React Applications for Performance"',
-      "Teaching Assistant for Web Development course (2 semesters)",
-      "Founded university coding club with 50+ active members",
+      "Completed multiple individual and group projects requiring research, analysis, and presentation",
+      "Developed practical skills in communication, problem-solving, and critical thinking"
     ],
     coursework: [
       "Data Structures & Algorithms",
       "Computer Networks",
       "Database Systems",
-      "Software Engineering",
-      "Human-Computer Interaction",
+      "Operating Systems",
+      "Artificial Intelligence",
       "Machine Learning",
     ],
   },
@@ -36,9 +34,9 @@ const education = [
 
 const certifications = [
   {
-    title: "AWS Certified Solutions Architect",
-    issuer: "Amazon Web Services",
-    date: "2023",
+    title: "2025 Global Conference on Information Technology and Communication Networks (GITCON)",
+    issuer: "IEEE",
+    date: "2025",
     image: "/aws-certification-badge.png",
   },
   {
@@ -78,7 +76,7 @@ export default function EducationPage() {
                 <p className="text-sm text-muted-foreground">
                   {edu.location} · {edu.period}
                 </p>
-                <p className="text-sm text-primary mt-2">GPA: {edu.gpa}</p>
+                {/* <p className="text-sm text-primary mt-2">GPA: {edu.gpa}</p> */}
               </div>
             </div>
 

@@ -40,7 +40,7 @@ const certifications = [
     image: "/aws-certification-badge.png",
   },
   {
-    title: "Meta Front-End Developer Professional",
+    title: "Meta Front-End ",
     issuer: "Meta",
     date: "2022",
     image: "/meta-certification-badge.jpg",

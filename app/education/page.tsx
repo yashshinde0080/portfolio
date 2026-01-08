@@ -37,13 +37,31 @@ const certifications = [
     title: "2025 Global Conference on Information Technology and Communication Networks (GITCON)",
     issuer: "IEEE",
     date: "2025",
-    image: "/aws-certification-badge.png",
+    image: "/GITCON.png",
   },
   {
-    title: "Meta Front-End ",
-    issuer: "Meta",
-    date: "2022",
-    image: "/meta-certification-badge.jpg",
+    title: "CS50's Introduction to Artificial Intelligence with Python",
+    issuer: "CS50",
+    date: "2025",
+    image: "/CS50_cer.png",
+  },
+  {
+    title: "Oracle Certified Foundation Associate",
+    issuer: "Oracle",
+    date: "2025",
+    image: "/Oracle.png",
+  },
+    {
+    title: "Foundations of Artificial Intelligence :Introduction to Al and Intelligent Agents",
+    issuer: "AI Campus",
+    date: "2025",
+    image: "/AI_Campus.png",
+  },
+    {
+    title: "NKCon Conference",
+    issuer: "IEEE",
+    date: "2025",
+    image: "/NKCon.png",
   },
 ]
 

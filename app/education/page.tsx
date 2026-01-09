@@ -63,6 +63,12 @@ const certifications = [
     date: "2025",
     image: "/NKCon.png",
   },
+  {
+    title: "Responsive Web Design",
+    issuer: "FreeCodeCamp",
+    date: "2025",
+    image: "/FreeCodeCamp.png",
+  }
 ]
 
 export default function EducationPage() {
@@ -161,7 +167,7 @@ export default function EducationPage() {
             courses, conferences, and technical reading.
           </p>
           <div className="flex flex-wrap gap-2">
-            {["Frontend Masters", "Egghead.io", "Udemy", "Coursera", "freeCodeCamp"].map((platform) => (
+            {["IEEE", "FreeCodeCamp", "Udemy", "AI Campus", "Oracle", "CS50"].map((platform) => (
               <span key={platform} className="px-3 py-1 text-xs border border-border rounded-full text-foreground">
                 {platform}
               </span>

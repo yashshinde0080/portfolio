@@ -10,23 +10,23 @@ export const metadata = {
 
 const posts = [
   {
-    title: "Building Accessible Design Systems",
-    date: "December 2024",
-    readTime: "8 min read",
+    title: "Natural Language Processing (NLP) for Healthcare Records: AI for analyzing and summarizing medicalrecords and doctor notes",
+    date: "2025",
+    readTime: "8-10 min read",
     excerpt:
-      "Lessons learned from building a component library used by thousands of developers. Focus on ARIA patterns, keyboard navigation, and screen reader testing.",
-    slug: "accessible-design-systems",
-    topics: ["Accessibility", "Design Systems", "React"],
+      "Natural Language Processing (NLP) is a powerful tool for extracting and summarizing medical entities from unstructured data in Electronic Health Records (EHRs). It is based on a combination of machine learning and deep learning techniques to extract useful information from EHRs. The application of NLP is expected to improve healthcare workflows and patient care. The healthcare industry has implemented NLP technology as a revolutionary technology that delivers essential medical data analysis and automation solutions. In this paper, we highlight how NLP technologies can facilitate improving clinical processes and decision support by leveraging sophisticated approaches like machine learning, deep learning, and data science.",
+    slug: "NLP-for-Healthcare-Records",
+    topics: ["NLP", "Healthcare", "AI", "Machine Learning"," Deep Learning"],
   },
-  // {
-    // title: "The Real Cost of useEffect",
-    // date: "November 2024",
-    // readTime: "6 min read",
-    // excerpt:
-      // "Why I stopped fetching data in useEffect and what I do instead. Exploring better patterns for data synchronization in React applications.",
-    // slug: "cost-of-useeffect",
-    // topics: ["React", "Performance", "Patterns"],
-  // },
+  {
+    title: "AI-Powered Driving Analytics: Understanding Driver BehaviorThrough Data",
+    date: "2025",
+    readTime: "10-12 min read",
+    excerpt:
+      "Driver behavior analysis (DBA) is one of the most important research topics in the field of driving analytics. In this paper, we review the current state of the art of AI-driven driving analytics, which is a disruptive way to perceive driver behavior as the application of powerful technologies to analyzing and processing the tremendous amounts of information gathered by vehicle sensors, telematics, and connected devices. The AI-powered driving analytics is based on deep learning and machine learning frameworks, such as deep learning, neural networks, and deep learning algorithms, which are able to identify and define driver behaviors. The data collected from in-vehicle sensors, vehicle trajectories, and mobile data helps to create reliable driver behavior detection systems. In addition, machine learning based analytics are implemented to help control fuel consumption, improve road safety, and offer immediate feedback to the driver, which results in a quantifiable increase in driving efficiency and reduction of accidents. Adaptive traffic management systems are AI-operated solutions to organize traffic flow and increase the efficiency of public transport, being dynamic in adjusting to the challenges of the cities. The operating field of artificial intelligence-based driving analytics promises to achieve tremendous breakthroughs in the future, especially through the scope of fully automated driving systems, smart cities, customized commuting, and social implications",
+    slug: "AI-Powered-Driving-Analytics",
+    topics: ["AI", "Driving Analytics", "Machine Learning", "Deep Learning", "Smart Cities"],
+  },
   // {
     // title: "Optimizing Next.js Bundle Size",
     // date: "October 2024",

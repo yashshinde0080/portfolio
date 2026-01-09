@@ -100,7 +100,7 @@ export default function BlogPage() {
               key={post.slug}
               className="group pb-8 border-b border-border last:border-0 hover:border-foreground/20 transition-colors"
             >
-              <Link href={`/blog/${post.slug}`} className="block">
+              <div className="block">
                 <div className="flex items-start justify-between mb-3">
                   <h2 className="text-2xl font-semibold text-foreground group-hover:text-primary transition-colors">
                     {post.title}
@@ -126,7 +126,7 @@ export default function BlogPage() {
                     </span>
                   ))}
                 </div>
-              </Link>
+              </div>
             </article>
           ))}
         </div>

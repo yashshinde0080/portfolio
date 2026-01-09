@@ -11,67 +11,35 @@ export const metadata = {
 
 const hackathons = [
   {
-    event: "TechCrunch Disrupt Hackathon",
-    date: "September 2024",
-    location: "San Francisco, CA",
-    theme: "AI for Social Good",
-    team: 4,
-    role: "Full-Stack Developer & Team Lead",
-    project: "AccessiBot - AI-powered accessibility testing tool",
-    description:
-      "Built an automated tool that scans websites for accessibility issues and provides actionable recommendations using GPT-4 and computer vision.",
-    result: "🏆 1st Place Overall Winner",
-    outcome: "Secured $10K prize money and meetings with 3 VCs",
-    tech: ["Next.js", "OpenAI API", "Puppeteer", "PostgreSQL"],
-    image: "/team-presenting-at-hackathon-demo.jpg",
-    demo: "/accessibility-testing-dashboard-interface.jpg",
-  },
-  {
-    event: "React Summit Hackathon",
-    date: "June 2024",
-    location: "Remote",
-    theme: "Developer Tools",
+    event: "HackForge Hackathon",
+    date: "2025",
+    location: "JCER, Ubambag, Belagavi",
+    theme: "Data Science And Web Development",
     team: 3,
-    role: "Frontend Lead",
-    project: "ComponentViz - Visual component dependency analyzer",
-    description: "Created a VS Code extension that visualizes React component dependencies and prop flow in real-time.",
-    result: "🥈 2nd Place & Community Favorite",
-    outcome: "500+ GitHub stars within first week",
-    tech: ["TypeScript", "VS Code API", "D3.js", "AST Parser"],
-    image: "/coding-at-hackathon-workspace.jpg",
-    demo: "/component-dependency-graph-visualization.jpg",
+    role: "Data Science lead",
+    project: "Eda for Students performance analysis and prediction",
+    description:
+      "Built an AI-powered web app that analyzes student performance data to identify trends and predict future outcomes, helping educators tailor interventions.",
+    result: "Participation Certificate",
+    outcome: "Improved data analysis skills and practical experience with AI models",
+    tech: ["Python", "Numpy", "Pandas", "Chart.js"],
+    image: "/hackforge.png",
+    demo: "/hackforge2.png",
   },
   {
-    event: "Hack the Planet",
-    date: "March 2024",
-    location: "Austin, TX",
-    theme: "Climate Tech",
-    team: 5,
-    role: "Backend Developer",
-    project: "CarbonTrack - Personal carbon footprint calculator",
-    description:
-      "Developed a mobile-first web app that helps users track and reduce their carbon footprint through daily activities.",
-    result: "🥉 3rd Place & Best Design",
-    outcome: "Featured in TechCrunch, 2,000+ beta signups",
-    tech: ["React Native", "Node.js", "MongoDB", "Chart.js"],
-    image: "/hackathon-team-brainstorming.jpg",
-    demo: "/mobile-carbon-tracking-app-interface.jpg",
-  },
-  {
-    event: "GitHub GameOff",
-    date: "November 2023",
-    location: "Online",
-    theme: "Game Development",
-    team: 2,
-    role: "Developer",
-    project: "CodeQuest - Educational coding game",
-    description:
-      "Built an interactive browser game that teaches programming concepts through puzzle-solving challenges.",
-    result: "🎮 Top 50 Submissions",
-    outcome: "Open-sourced and used by 10+ coding bootcamps",
-    tech: ["Phaser.js", "TypeScript", "WebGL", "Firebase"],
-    image: "/placeholder.svg?height=400&width=600",
-    demo: "/placeholder.svg?height=400&width=600",
+    event: "Nexora Hackathon",
+    date: "2025",
+    location: "JGI , Belagavi",
+    theme: "Healthcare , Fentech and Sustainable Development and more",
+    team: 4,
+    role: "AI/ML Developer",
+    project: "“Arogya Saathi”, an AI-powered health companion designed to help people in remote villages who suffer silently, far from PHCs and hospitals.",
+    description: "The app bridges the gap between patients and doctors through smart, accessible technology.What it does: Online mode: Multilingual AI chatbot with triage — takes image or text input to suggest next steps. Offline mode: Advisory chatbot that works without internet, educating users about their symptoms and providing basic medical guidance.",
+    result: "Participation Certificate",
+    outcome: "Gained experience in AI integration and app development in HealthTech",
+    tech: ["Python", "Streamlit", "Google Map Api ", "API Integration" , "Multilingual NLP" , "Offline Functionality"],
+    image: "/nexora.png",
+    demo: "/nexora2.png",
   },
 ]
 
@@ -169,7 +137,7 @@ export default function HackathonsPage() {
         <div className="mt-8">
           <Button asChild>
             <Link href="/blog">
-              Read Blog Posts <ArrowRight className="ml-2 h-4 w-4" />
+              Read Research Papers Posts <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
           </Button>
         </div>

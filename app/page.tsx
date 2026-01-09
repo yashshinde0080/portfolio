@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight, Github, Linkedin, Mail, Twitter } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
+import { Navigation } from "@/components/navigation"
 import { useState, useEffect } from "react"
 
 export default function Home() {
@@ -19,44 +20,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background transition-colors duration-300">
       {/* Navigation */}
-      <nav className="border-b border-border sticky top-0 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 z-50 transition-colors duration-300">
-        <div className="max-w-5xl mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <Link href="/" className="text-foreground font-medium hover:text-muted-foreground transition-colors">
-              Yash Shinde
-            </Link>
-            <div className="flex items-center gap-6">
-              <Link href="/about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                About
-              </Link>
-              <Link
-                href="/experience"
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-              >
-                Experience
-              </Link>
-              <Link href="/projects" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Projects
-              </Link>
-              <Link href="/education" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Education
-              </Link>
-              <Link
-                href="/hackathons"
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-              >
-                Hackathons
-              </Link>
-              <Link href="/blog" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Research Papers
-              </Link>
-              <Link href="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Contact
-              </Link>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Navigation />
 
       {/* Hero Section */}
       <main className="max-w-5xl mx-auto px-6 py-16">

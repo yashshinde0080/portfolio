@@ -3,7 +3,7 @@
 import type React from "react"
 
 import { Button } from "@/components/ui/button"
-import { Github, Linkedin, Mail, Twitter, Send } from "lucide-react"
+import { Github, Linkedin, Mail, Send } from "lucide-react"
 import { Navigation } from "@/components/navigation"
 import { useState } from "react"
 
@@ -17,7 +17,11 @@ export default function ContactPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    console.log("Form submitted:", formData)
+    const subject = encodeURIComponent(formData.subject)
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`,
+    )
+    window.location.href = `mailto:syash0080@gmail.com?subject=${subject}&body=${body}`
   }
 
   return (
@@ -148,15 +152,7 @@ export default function ContactPage() {
                   <Linkedin className="h-5 w-5" />
                   LinkedIn
                 </a>
-                <a
-                  href="https://twitter.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-muted-foreground hover:text-foreground hover:translate-x-1 transition-all duration-300"
-                >
-                  <Twitter className="h-5 w-5" />
-                  Twitter
-                </a>
+
               </div>
             </div>
 
@@ -176,7 +172,7 @@ export default function ContactPage() {
             specific technical challenge or want to build something from scratch, let's talk.
           </p>
           <Button size="lg" asChild className="hover:scale-105 transition-transform duration-300">
-            <a href="mailto:hello@example.com">Start a Conversation</a>
+            <a href="mailto:syash0080@gmail.com">Start a Conversation</a>
           </Button>
         </div>
       </main>

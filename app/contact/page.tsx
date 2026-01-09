@@ -118,11 +118,11 @@ export default function ContactPage() {
               <h3 className="font-medium text-foreground mb-4">Direct Contact</h3>
               <div className="space-y-3">
                 <a
-                  href="mailto:hello@example.com"
+                  href="mailto:syash0080@gmail.com"
                   className="flex items-center gap-3 text-muted-foreground hover:text-foreground hover:translate-x-1 transition-all duration-300"
                 >
                   <Mail className="h-5 w-5" />
-                  hello@example.com
+                  syash0080@gmail.com
                 </a>
               </div>
             </div>
@@ -131,7 +131,7 @@ export default function ContactPage() {
               <h3 className="font-medium text-foreground mb-4">Social Links</h3>
               <div className="space-y-3">
                 <a
-                  href="https://github.com"
+                  href="https://github.com/yashshinde0080"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-muted-foreground hover:text-foreground hover:translate-x-1 transition-all duration-300"
@@ -140,7 +140,7 @@ export default function ContactPage() {
                   GitHub
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/yash-shinde-3a1ab5274/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-muted-foreground hover:text-foreground hover:translate-x-1 transition-all duration-300"

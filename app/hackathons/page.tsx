@@ -41,6 +41,21 @@ const hackathons = [
     image: "/nexora.png",
     demo: "/nexora2.png",
   },
+    {
+    event: "Vista Hackathon",
+    date: "2026",
+    location: "Online {Kaggle}",
+    theme: "YOLOv8 Object Detection",
+    team: 3,
+    role: "AI/ML Developer",
+    project: "Yolov8 Object Detection for Object Detection in Images and Videos for retail and shop object detection",
+    description: "Trained a custom YOLOv8 model to detect and classify objects in retail environments, improving inventory management and customer experience. The model was optimized for real-time performance, enabling efficient detection in both images and videos.",
+    result: "Participation Certificate",
+    outcome: "Enhanced skills in computer vision and real-time object detection using YOLOv8",
+    tech: ["Python", "YOLOv8", "Ultralytics", "OpenCV", "TensorRT"],
+    image: "/vista.jpeg",
+    demo: "/vista.jpeg",
+  }
 ]
 
 export default function HackathonsPage() {

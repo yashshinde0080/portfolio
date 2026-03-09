@@ -68,6 +68,12 @@ const certifications = [
     issuer: "FreeCodeCamp",
     date: "2025",
     image: "/FreeCodeCamp.png",
+  },
+  {
+    title: "Fundamentals of AI Agents",
+    issuer: "Hugging Face",
+    date: "2026",
+    image: "/Huggingface.webp",
   }
 ]
 
